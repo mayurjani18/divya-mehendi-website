@@ -23,14 +23,13 @@ header {
   padding: 25px;
 }
 header img {
-  height: 70px;
+  height: 110px;
   margin-bottom: 10px;
 }
 header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 36px;
   margin: 0;
-  letter-spacing: 1px;
 }
 header p {
   margin-top: 5px;
@@ -71,6 +70,10 @@ h2 {
 .gallery img {
   width: 100%;
   border-radius: 12px;
+  transition: 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
 }
 
 /* Buttons */
@@ -85,6 +88,12 @@ h2 {
 }
 .insta-btn {
   background: #E1306C;
+}
+
+/* Instagram */
+.instagram-media {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* Footer */
@@ -113,7 +122,7 @@ footer {
 <body>
 
 <header>
-  <img src="https://raw.githubusercontent.com/mayurjani18/divya-mehendi-website/main/logo.png" style="height:110px; margin-bottom:10px;">
+  <img src="https://raw.githubusercontent.com/mayurjani18/divya-mehendi-website/main/logo.png">
   <h1>Divya Mehendi Artist</h1>
   <p>Professional Bridal Mehendi in Morbi</p>
 </header>
@@ -137,6 +146,33 @@ footer {
     <img src="https://i.imgur.com/Bv2vQnE.jpg">
   </div>
 </div>
+
+<!-- Instagram Grid -->
+<div class="section">
+  <h2>Instagram Gallery</h2>
+  <div class="gallery">
+    <img src="https://i.imgur.com/8Km9tLL.jpg">
+    <img src="https://i.imgur.com/5tj6S7Ol.jpg">
+    <img src="https://i.imgur.com/3ZQ3Z4B.jpg">
+    <img src="https://i.imgur.com/Bv2vQnE.jpg">
+    <img src="https://i.imgur.com/8Km9tLL.jpg">
+    <img src="https://i.imgur.com/5tj6S7Ol.jpg">
+  </div>
+</div>
+
+<!-- Instagram Embed -->
+<div class="section">
+  <h2>Follow Our Work on Instagram</h2>
+
+  <blockquote class="instagram-media" 
+    data-instgrm-permalink="https://www.instagram.com/divya_mahendi2505/" 
+    data-instgrm-version="14" 
+    style="background:#fff; border:0; margin:auto; max-width:400px;">
+  </blockquote>
+
+</div>
+
+<script async src="https://www.instagram.com/embed.js"></script>
 
 <div class="section">
   <h2>Book Now</h2>
